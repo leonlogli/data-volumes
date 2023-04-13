@@ -35,3 +35,9 @@ Set env var:
 ```bash
 docker run -d -v feedback:/data-volumes/feedback -p 8082:80 -e PORT=80 --rm data-volumes:env
 ```
+
+Set env file:
+
+```bash
+docker run -d -v feedback:/data-volumes/feedback -p 8083:5000 --env-file ./.env.development --rm data-volumes:env
+```
