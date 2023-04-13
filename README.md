@@ -1,6 +1,6 @@
 # Docker "Data & Volumes" Example
 
-Docker example that shows how to build "Data & Volumes" image.
+Docker example that shows how to build "Data & Volumes" image and use environnement variables.
 
 ## Prerequisites
 
@@ -28,4 +28,10 @@ docker run -d -v feedback:/data-volumes/feedback -p 8080:3000 --rm --name data-v
 ```bash
 # list created volumes
 docker volume ls
+```
+
+Set env var:
+
+```bash
+docker run -d -v feedback:/data-volumes/feedback -p 8082:80 -e PORT=80 --rm data-volumes:env
 ```
