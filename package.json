@@ -1,9 +1,9 @@
 {
-  "name": "data-volume-example",
+  "name": "data-volumes",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "author": "Maximilian Schwarzmüller / Academind GmbH",
+  "author": "Léon Logli",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
