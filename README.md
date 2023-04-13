@@ -21,14 +21,11 @@ docker build -t data-volumes .
 Run the Docker container:
 
 ```bash
-docker run -p 3000:8080 data-volumes
+# `-v` flag create a named volume to persiste data even if the container is removed
+docker run -d -v feedback:/data-volumes/feedback -p 8080:3000 --rm --name data-volumes data-volumes
 ```
 
-To stop the container:
-
 ```bash
-# get the running container id
-docker ps
-# stop the container
-docker stop container_id
+# list created volumes
+docker volume ls
 ```
